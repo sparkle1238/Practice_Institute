@@ -1,4 +1,5 @@
 // из текста n СС вывести Double в 10 сс
+
 #include <stdio.h>
 #include "function.h"
 
@@ -10,7 +11,7 @@ int СhangeСС()
   printf("введите вашу сс\n");
   scanf("%i",&youcc);
   printf("введите строку с числом\n");
-  fscanf(stdin,"%s",arr);
+  scanf("%s",arr);
   for(int i=0; arr[i]>3; i++)
   {
     if(arr[i] == 46)
