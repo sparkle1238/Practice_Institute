@@ -35,14 +35,9 @@ int HOD(int a,int b)
   return nod;
 }
 
-int Log2(int x)
+int Log2(double x,int startdegree)
 {
-  int n=1,i;
-  for(i = 0; n < x; i++)
-  {
-    n*=2;
-  }
-  return x <= 0 ? -2 : n == x ? i : -1;
+  return x <= 0 ? -2 : ( x > 2 ? Log2(x/2, startdegree+1) : (startdegree == 0 ? (x==2 ? 1 : 0 ) : ( (int)x % 2 == 0 ? startdegree+1 : -1)));
 }
 
 int task4()
