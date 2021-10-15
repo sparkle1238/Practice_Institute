@@ -14,7 +14,7 @@ int СhangeСС()
   scanf("%s",arr);
   for(int i=0; arr[i]>3; i++)
   {
-    if(arr[i] == 46)
+    if(arr[i] > '0')
     {
       for(int j=i-1; j>=0; j--)
       {

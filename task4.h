@@ -3,7 +3,7 @@
 
 int Eotx()
 {
-  double a,b,dx,sum,e;
+  double a, b, dx, sum, e;
   printf("введите: начало Х , конец Х, шаг увеличения Х и точность \n");
   scanf("%lf %lf %lf %i",&a , &b, &dx, &e);
   printf("                             E^-x                            \n"
