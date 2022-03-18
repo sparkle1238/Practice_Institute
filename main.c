@@ -3,11 +3,12 @@
 #include "task2.h"
 #include "task3.h"
 #include "task4.h"
+#include "task5.h"
 
 int main()
 {
   for(;;)
-  { int a;
+  { 
     int dz;
     char c;
     printf("\nвведите номер дз\n");
@@ -24,6 +25,9 @@ int main()
       break;
     case 4:
       task4(); 
+      break;
+    case 5:
+      task5();
       break;
     default:
       return 0;
